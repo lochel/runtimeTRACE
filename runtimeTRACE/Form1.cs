@@ -80,7 +80,7 @@ namespace runtimeTRACE
                     }
                     level--;
                 }
-                else
+                else if (line != "")
                 {
                     try
                     {
@@ -186,7 +186,12 @@ namespace runtimeTRACE
             fsWatcher.EnableRaisingEvents = false;
             richTextBox1.Enabled = true;
             filename = "";
-            richTextBox1.Text = "<insert code here>";
+        }
+
+        private void reloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread demoThread = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcSafe));
+            demoThread.Start();
         }
     }
 }

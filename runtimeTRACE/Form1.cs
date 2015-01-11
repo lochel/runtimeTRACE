@@ -14,7 +14,7 @@ namespace runtimeTRACE
     public partial class Form1 : Form
     {
         String name = "runtimeTRACE for OpenModelica";
-        String version = "Version 0.1+dev";
+        String version = "Version 0.2";
         String author = "(c) 2014-2015, Lennart A. Ochel";
 
         String filename = "";

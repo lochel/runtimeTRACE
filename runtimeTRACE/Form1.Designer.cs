@@ -68,7 +68,7 @@
             this.treeView1.Location = new System.Drawing.Point(4, 5);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(762, 438);
+            this.treeView1.Size = new System.Drawing.Size(762, 413);
             this.treeView1.TabIndex = 0;
             // 
             // richTextBox1
@@ -78,9 +78,10 @@
             this.richTextBox1.Location = new System.Drawing.Point(4, 5);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(762, 438);
+            this.richTextBox1.Size = new System.Drawing.Size(762, 413);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "<insert code here>";
+            this.richTextBox1.WordWrap = false;
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // tabControl1
@@ -93,7 +94,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(778, 481);
+            this.tabControl1.Size = new System.Drawing.Size(778, 456);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -103,7 +104,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Size = new System.Drawing.Size(770, 448);
+            this.tabPage1.Size = new System.Drawing.Size(770, 423);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "TRACE code";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -115,7 +116,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage2.Size = new System.Drawing.Size(770, 448);
+            this.tabPage2.Size = new System.Drawing.Size(770, 423);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TRACE tree";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -127,7 +128,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Size = new System.Drawing.Size(770, 448);
+            this.tabPage3.Size = new System.Drawing.Size(770, 423);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "TRACE stats";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(4, 5);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(762, 438);
+            this.dataGridView1.Size = new System.Drawing.Size(762, 413);
             this.dataGridView1.TabIndex = 1;
             // 
             // show
@@ -261,7 +262,7 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tabControl1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(778, 481);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(778, 456);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 33);

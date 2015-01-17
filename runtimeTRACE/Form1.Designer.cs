@@ -58,6 +58,7 @@
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             this.treeView1.Location = new System.Drawing.Point(4, 5);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(762, 413);
+            this.treeView1.Size = new System.Drawing.Size(762, 438);
             this.treeView1.TabIndex = 0;
             // 
             // richTextBox1
@@ -78,7 +79,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(4, 5);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(762, 413);
+            this.richTextBox1.Size = new System.Drawing.Size(762, 438);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "<insert code here>";
             this.richTextBox1.WordWrap = false;
@@ -94,7 +95,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(778, 456);
+            this.tabControl1.Size = new System.Drawing.Size(778, 481);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -104,7 +105,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Size = new System.Drawing.Size(770, 423);
+            this.tabPage1.Size = new System.Drawing.Size(770, 448);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "TRACE code";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -116,7 +117,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage2.Size = new System.Drawing.Size(770, 423);
+            this.tabPage2.Size = new System.Drawing.Size(770, 448);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TRACE tree";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -128,7 +129,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Size = new System.Drawing.Size(770, 423);
+            this.tabPage3.Size = new System.Drawing.Size(770, 448);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "TRACE stats";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -147,12 +148,13 @@
             this.dataGridView1.Location = new System.Drawing.Point(4, 5);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(762, 413);
+            this.dataGridView1.Size = new System.Drawing.Size(762, 438);
             this.dataGridView1.TabIndex = 1;
             // 
             // show
             // 
             this.show.FillWeight = 40F;
+            this.show.Frozen = true;
             this.show.HeaderText = "show";
             this.show.Name = "show";
             this.show.Width = 40;
@@ -171,6 +173,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.hELPToolStripMenuItem});
@@ -262,15 +265,19 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tabControl1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(778, 456);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(778, 481);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 33);
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(778, 481);
+            this.toolStripContainer1.Size = new System.Drawing.Size(778, 514);
             this.toolStripContainer1.TabIndex = 5;
             this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // toolStripContainer1.TopToolStripPanel
+            // 
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
             // 
             // Form1
             // 
@@ -279,9 +286,9 @@
             this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form1";
             this.Text = "runtimeTRACE";
             this.tabControl1.ResumeLayout(false);
@@ -294,6 +301,8 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             this.ResumeLayout(false);
